@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
+/*   By: ayanaga <ayanaga@student.42.ja>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/12 19:21:10 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/05/12 19:43:31 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/17 20:26:57 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 int	ft_putchar(int c)
 {
 	write(1, &c, 1);
-	return (c);
+	return (1);
 }
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	printf("%c\n", ft_putchar('a'));
-}
+// int	main(void)
+// {
+// 	printf("%c\n", ft_putchar('a'));
+// }

@@ -3,28 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
+/*   By: ayanaga <ayanaga@student.42.ja>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/12 20:04:23 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/05/12 20:12:22 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/17 21:25:33 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putstr(char *s)
+int	ft_putstr(char *s)
 {
 	int	i;
 
 	i = 0;
+	if (!s)
+		s = "(null)";
 	while (s[i] != '\0')
 	{
 		write(1, &s[i], 1);
 		i++;
 	}
+	return (i);
 }
 
-int	main(void)
-{
-	ft_putstr("ABCDE");
-}
+// int	main(void)
+// {
+// 	ft_putstr("ABCDE");
+// }

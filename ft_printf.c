@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayanaga <ayanaga@student.42.ja>            +#+  +:+       +#+        */
+/*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/12 19:16:07 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/05/17 21:18:05 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/20 18:32:23 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,20 +71,20 @@ int	ft_printf(const char *format, ...)
 	return (count);
 }
 
-// #include <stdio.h>
+//#include <stdio.h>
 
-// int	main(void)
-// {
-// 	int	a;
-// 	int	r1;
-// 	int	r2;
+//int	main(void)
+//{
+//	int	a;
+//	int	r1;
+//	int	r2;
 
-// 	a = 5;
-// 	r1 = ft_printf("ft: char=%c str=%s int=%d hex=%x HEX=%X percent=%% ptr=%p\n",
-// 			'A', "hello", -123, 255, 255, &a);
-// 	r2 = printf("pf: char=%c str=%s int=%d hex=%x HEX=%X percent=%% ptr=%p\n",
-// 			'A', "hello", -123, 255, 255, &a);
-// 	ft_printf("ft return: %d\n", r1);
-// 	printf("pf return: %d\n", r2);
-// 	return (0);
-// }
+//	a = 5;
+//	r1 = ft_printf("char=%c str=%s int=%d hex=%x HEX=%X percent=%% ptr=%p\n",
+//			'A', "hello", -123, 255, 255, &a);
+//	r2 = printf("char=%c str=%s int=%d hex=%x HEX=%X percent=%% ptr=%p\n", 'A',
+//			"hello", -123, 255, 255, &a);
+//	ft_printf("ft return: %d\n", r1);
+//	printf("pf return: %d\n", r2);
+//	return (0);
+//}
